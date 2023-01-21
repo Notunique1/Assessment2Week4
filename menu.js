@@ -31,7 +31,16 @@
 */
 
 //CODE HERE
+const pizza = { 
 
+    Name: 'spinach',
+    Price: '18.88',
+    Category: 'dinner',
+    Popularity: '10',
+    Rating: '10',
+    Tags: ['veggie lovers','organic','gluten free crust']
+};
+console.log('pizza')
 
 
 //////////////////PROBLEM 2////////////////////
@@ -41,7 +50,7 @@
     First, log the popularity of pizza. 
     Use dot notation to access the value.
 */
-
+console.log(pizza.Popularity);
 //CODE HERE
 
 
@@ -51,7 +60,7 @@
     Use a combination of dots and brackets to
     get the value.
 */
-
+console.log(pizza.Tags[1])
 //CODE HERE
 
 
@@ -63,7 +72,10 @@
 */
 
 //CODE HERE
-
+const alias = pizza.Price
+let {rating} = pizza;
+rating = 10;
+console.log(rating);
 
 /*
     Fourth, and last, destructure the category
@@ -73,7 +85,9 @@
 */
 
 //CODE HERE
-
+let {category} = pizza;
+category = 'dinner';
+console.log(category);
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -86,7 +100,16 @@
     tags. That way, you'll be able to use this
     data in some functions that you'll write.
 */
+const hibachi = {
 
+    Name: 'steak',
+    Price: '20.00',
+    Category: 'buffet',
+    Popularity: '1',
+    Rating: '8',
+    Tags: ['spicy','bogo','cooked']
+};
+console.log('hibachi')
 //CODE HERE
 
 
@@ -104,7 +127,8 @@
 */
 
 //CODE HERE
-
+const filteredFood = hibachi.filter((food) => food.tags.includes(bogo));
+console.log(filteredFood);
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
 
@@ -151,6 +175,11 @@
 //CODE HERE
 
 
+
+
+
+
+
 /*
     Invoke the `filterByProperty` function passing
     in a value for each paramter.
@@ -158,4 +187,4 @@
     You'll have to console.log to see the filtered array
 */
 
-//CODE HERE
+//CODE HERE      

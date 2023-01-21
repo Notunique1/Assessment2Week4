@@ -50,8 +50,7 @@ const greetUser = (name) => {return "Welcome back"+ " " + name;}
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
-function canWeDeliver()
-    const n = zipcode
+function canWeDeliver(zipcode)
     if(n === '85205','85204','85203','85213','85206')
     {console.log('You are in our delivery zone!');
 }
@@ -110,7 +109,7 @@ const Deals = [
         desc: '   This deal lasts until the end of March! '
     }
 ]
-
+console.log(Deals);
 /*
     The owner has decided to take the 15% off
     deal down to 10%.

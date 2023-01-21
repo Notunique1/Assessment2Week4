@@ -34,7 +34,11 @@ const cart = [
 ]
 
 //CODE HERE
-
+const sum = cart.reduce((temp, x) => { 
+    return temp + x.price;
+  }, 0);
+  
+  console.log(sum);
 // const summedPrice = cart.reduce(/* CALLBACK HERE */)
 
 
@@ -54,7 +58,17 @@ const cart = [
 */
 
 //CODE HERE
+function calcFinalPrice(cartTotal, couponValue, tax) {
 
+    const taxAmount = cartTotal * tax;
+  
+    const totalWithTax = cartTotal + taxAmount;
+  
+    const finalTotal = totalWithTax - couponValue;
+  
+    return finalTotal;
+  }
+  console.log(calcFinalPrice(26.97, 15, .06)); 
 
 
 //////////////////PROBLEM 3////////////////////
@@ -79,6 +93,20 @@ const cart = [
 
 /*
     TEXT ANSWER HERE
+The info a restaurant may need is the following:
+
+1. delivery address- stored for a place to deliver
+2. email address- stored to market customer
+3. phone number - stored to help with customer look up
+4. credit card information-stored to take orders faster 
+
+different datatypes:
+1.For the deliver address I would select the data type of object.
+2.For the email address I would select the data type of object. 
+3.For the phone number I would select the number data type.
+4.For the credit card info I would select number as date type.
+
+
 
 */
 
@@ -87,4 +115,8 @@ const cart = [
     guidelines.
 */
 
+
+
 //CODE HERE
+const person ={Address:'123 tree lane'}
+console.log(person)
